@@ -1,20 +1,21 @@
-import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
-import Cars from './boby/Cars'
-import Layout from './boby/Layout';
-
-
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Courses from "./pages/Courses";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div style={{
-      textAlign: 'center'
-    }}>
-      <Layout/>
-   <Routes>
-      <Route path='cars' element={<Cars/>}/>
-   </Routes>
-    </div> 
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
