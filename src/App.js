@@ -1,21 +1,22 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import Courses from "./pages/Courses";
-import About from "./pages/About";
+import Header from './components/Header';
+import Activity from './components/Activity';
+import Health from './components/Health';
+import Goal from './components/Goal';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+    <div className="app">
+      <Header />
+
+      <main className="content">
+        <Activity />
+        <Health />
+        <Goal />
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      IT Академия | Digital Nomad
+    <footer className="footer">
+      Здоровье и Спорт !
     </footer>
   );
 }
