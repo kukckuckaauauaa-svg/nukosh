@@ -1,9 +1,9 @@
-function Footer() {
-  return (
-    <footer className="footer">
-      Здоровье и Спорт !
-    </footer>
-  );
-}
+// function Footer() {
+//   return (
+//     <footer className="footer">
+//       Здоровье и Спорт !
+//     </footer>
+//   );
+// }
 
-export default Footer;
+// export default Footer;

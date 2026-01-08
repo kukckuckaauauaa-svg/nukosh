@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
-      <Header />
+      {/* <Header />
 
       <main className="content">
         <Activity />
@@ -15,7 +15,7 @@ function App() {
         <Goal />
       </main>
 
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
